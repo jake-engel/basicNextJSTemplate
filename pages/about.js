@@ -5,7 +5,7 @@ export default () => {
   return (
     <Page>
       <Head title="About Page" />
-      <div>This is an about page!</div>
+      <div>ABOUT PAGE!</div>
     </Page>
   );
 };
