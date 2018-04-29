@@ -1,4 +1,4 @@
-import MyLink from './Link';
+import NavLink from './Link';
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -27,12 +27,12 @@ const renderLogo = () => {
 const renderLinks = () => {
   return (
     <div>
-      <MyLink prefetch href="/" activeClassName="active">
+      <NavLink prefetch href="/" activeClassName="active">
         <a>Home</a>
-      </MyLink>
-      <MyLink href="/about" activeClassName="active">
+      </NavLink>
+      <NavLink href="/about" activeClassName="active">
         <a>About</a>
-      </MyLink>
+      </NavLink>
     </div>
   );
 };
