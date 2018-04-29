@@ -3,9 +3,9 @@ import Footer from '../components/Footer/Footer';
 import stylesheet from './index.scss';
 
 export default ({ children }) => (
-  <div>
+  <div className="container">
     <Navbar />
-    {children}
+    <div className="main">{children}</div>
     <Footer />
     <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
   </div>
