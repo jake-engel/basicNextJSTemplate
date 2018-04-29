@@ -1,9 +1,10 @@
+import MyLink from './Link';
 import Link from 'next/link';
 
 const Navbar = () => {
   return (
     <nav>
-      <div className="nav-wrapper">
+      <div className="nav-wrapper blue-grey darken-1">
         {renderLogo()}
         <ul id="nav-mobile" className="right hide-on-med-and-down">
           {renderLinks()}
@@ -16,7 +17,7 @@ const Navbar = () => {
 const renderLogo = () => {
   return (
     <Link prefetch href="/">
-      <a className="brand-logo">
+      <a>
         <img src="../../static/favicon.ico" alt="Logo" />
       </a>
     </Link>
@@ -26,46 +27,14 @@ const renderLogo = () => {
 const renderLinks = () => {
   return (
     <div>
-      <li>
-        <Link prefetch href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      <li>
-        <Link prefetch href="/about">
-          <a>About</a>
-        </Link>
-      </li>
+      <MyLink prefetch href="/" activeClassName="active">
+        <a>Home</a>
+      </MyLink>
+      <MyLink href="/about" activeClassName="active">
+        <a>About</a>
+      </MyLink>
     </div>
   );
 };
 
 export default Navbar;
-
-// const links = [
-//   { href: 'https://github.com/segmentio/create-next-app', label: 'Github' }
-// ].map(link => {
-//   link.key = `nav-link-${link.href}-${link.label}`;
-//   return link;
-// });
-
-// const Nav = () => (
-//   <nav>
-//     <ul>
-//       <li>
-//         <Link prefetch href="/">
-//           <a>Home</a>
-//         </Link>
-//       </li>
-//       <ul>
-//         {links.map(({ key, href, label }) => (
-//           <li key={key}>
-//             <Link href={href}>
-//               <a>{label}</a>
-//             </Link>
-//           </li>
-//         ))}
-//       </ul>
-//     </ul>
-//   </nav>
-// );

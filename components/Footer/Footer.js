@@ -1,6 +1,6 @@
 export default () => {
   return (
-    <footer className="page-footer">
+    <footer className="page-footer blue-grey darken-1">
       <div className="container">
         <div className="row">
           <div className="col l6 s12">
