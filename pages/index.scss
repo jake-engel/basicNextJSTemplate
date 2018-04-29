@@ -1,0 +1,10 @@
+// SCSS IMPORTS
+
+// Import normalize.css to make all browser types show the same thing
+@import 'normalize.css';
+
+// Import globally applied styles
+@import '../static/style.scss';
+
+// Component Imports
+@import '../components/Navbar/Navbar.scss';
