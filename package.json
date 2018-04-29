@@ -1,5 +1,5 @@
 {
-  "name": "create-next-example-app",
+  "name": "ReactReduxNextTemplate",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -10,9 +10,9 @@
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-plugin-wrap-in-js": "^1.1.1",
     "glob": "^7.1.2",
+    "materialize-css": "^0.100.2",
     "next": "^5.1.0",
     "node-sass": "^4.9.0",
-    "normalize.css": "^8.0.0",
     "postcss-easy-import": "^3.0.0",
     "postcss-loader": "^2.1.4",
     "raw-loader": "^0.5.1",

@@ -1,10 +1,11 @@
 // SCSS IMPORTS
 
-// Import normalize.css to make all browser types show the same thing
-@import 'normalize.css';
+//Include Materialize CSS
+@import 'materialize-css/dist/css/materialize.min.css';
 
 // Import globally applied styles
 @import '../static/style.scss';
 
 // Component Imports
 @import '../components/Navbar/Navbar.scss';
+@import '../components/Footer/Footer.scss';

@@ -1,13 +1,42 @@
 import Link from 'next/link';
 
-import './Navbar.scss';
-
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      Navbar <br />
-      <br />
+    <nav>
+      <div className="nav-wrapper">
+        {renderLogo()}
+        <ul id="nav-mobile" className="right hide-on-med-and-down">
+          {renderLinks()}
+        </ul>
+      </div>
     </nav>
+  );
+};
+
+const renderLogo = () => {
+  return (
+    <Link prefetch href="/">
+      <a className="brand-logo">
+        <img src="../../static/favicon.ico" alt="Logo" />
+      </a>
+    </Link>
+  );
+};
+
+const renderLinks = () => {
+  return (
+    <div>
+      <li>
+        <Link prefetch href="/">
+          <a>Home</a>
+        </Link>
+      </li>
+      <li>
+        <Link prefetch href="/about">
+          <a>About</a>
+        </Link>
+      </li>
+    </div>
   );
 };
 
@@ -40,4 +69,3 @@ export default Navbar;
 //     </ul>
 //   </nav>
 // );
-
